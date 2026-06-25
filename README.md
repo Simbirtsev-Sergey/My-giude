@@ -41,9 +41,9 @@
 
 ```mermaid
  graph TD;
- untracked--> staged(+tracked);
- staged(+tracked)--> modified;
- modified-->staged(+tracked);
- staged(+tracked)-->tracked;
+ untracked--> staged;
+ staged--> modified;
+ modified-->staged;
+ staged-->tracked;
  tracked--> modified
 ```
