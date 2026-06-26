@@ -53,5 +53,13 @@
 * git commit --amend --no-edit - дополнить коммит новыми файлами. Опция --amend создает новый коммит на основе старого. --no-edit сообщает о том, что сообщение коммита нужно оставить как было
 * git commit --amend -m - поменять сообщение коммита
 
-# Сменить редактор в Git
+## Сменить редактор в Git
 * git config --global core.editor "[название редактора]"
+
+## Откатываем изменения 
+* git restore --staged <file> - откатка file в untracked, есои он был добавлен в staging area (с помощью git add)
+* git reset --hard <commit hash> - откатка коммита (от англ. reset - "сброс", "обнуление")
+* git restore <file> - отменить изменения в файле
+
+
+
